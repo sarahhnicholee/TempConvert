@@ -4,13 +4,10 @@
  * Converts the given Fahrenheit temperature `f` to Celsius.
  * @param {number} f temperature in °F
  * @returns {number} temperature in °C
-//  */whatsthis ^ for??
+ */ 
 function convertToCelsius(f) {
-  return(f-32*5/9)
+  return(f-32)*5/9
 }
-  // TODO
-
-
 /**
  * | Temperature | Description |
  * | ----------- | ----------- |
@@ -24,28 +21,27 @@ function convertToCelsius(f) {
  * @returns {string} the description from the table above corresponding to
  * the given Fahrenheit temperature `f`
  */
-function describeTemperature(f) { //from convertToCelc??????
-  // TODO
-  let temp= 98 //do i pick a temp and stick w it this entre activity?? and does my "let" go here ??
-  if(temp<32){
-    console.log("very cold")
-  } else if(temp<64){
-    console.log("cold")
-  } else if(temp<86){
-    console.log("warm")
-  } else if(temp<100){
-    console.log("hot")
-  } else if(temp>=100){
-    console.log("very hot")
+function describeTemperature(f) {
+  
+  if(f<32){
+    return "very cold"
+  } else if(f<64){
+    return "cold"
+  } else if(f<86){
+    return "warm"
+  } else if(f<100){
+    return "hot"
+  } else if(f>=100){
+    return "very hot"
   }
-}
+} 
 
 /**
- * @param {number} limit //Are they declaring variables for us???
+ * @param {number} limit 
  * @returns {number} a random integer in the range [0, `limit`)
  */
-function getRandomInt(limit) {return math.random ;
-  return ($[convertToCelsius], $[describeTemperature])
+function getRandomInt(limit) {
+  return Math.round(Math.random()*limit);
   }
 
 // -------------------- DO NOT CHANGE THE CODE BELOW ---------------------- //
